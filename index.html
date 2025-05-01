@@ -4,80 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Visvayatri | Northern India Tours</title>
-  <link rel="icon" href="images/logo.png" type="image/x-icon">
-
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fffaf2;
+      background: #fffaf2;
       color: #333;
     }
 
     header {
+      background-color: #e6dcd1;
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 30px;
-      background-color: #f3e8dd;
       flex-wrap: wrap;
     }
 
     .logo {
-      display: flex;
-      align-items: center;
       font-size: 1.8rem;
       font-weight: bold;
-      color: #804000;
-    }
-
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+      color: #864e2b;
     }
 
     nav a {
-      color: #5b3924;
+      margin: 0 10px;
+      color: #5a3825;
       text-decoration: none;
       font-weight: 500;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background 0.3s;
     }
 
     nav a:hover {
-      background-color: #e0cdb5;
+      text-decoration: underline;
     }
 
     .slider {
+      position: relative;
       width: 100%;
       height: 400px;
       overflow: hidden;
-      position: relative;
+      margin-top: 10px;
     }
 
-    .slide {
-      width: 100%;
+    .slides {
+      display: flex;
+      width: 300%;
       height: 100%;
-      object-fit: cover;
-      display: none;
-      transition: opacity 1s;
+      animation: slide 15s infinite;
     }
 
-    .slide.active {
-      display: block;
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%   { margin-left: 0%; }
+      33%  { margin-left: -100%; }
+      66%  { margin-left: -200%; }
+      100% { margin-left: 0%; }
     }
 
     .welcome {
       text-align: center;
-      padding: 50px 20px;
-      background-color: #f9f1e8;
+      padding: 40px 20px;
+      background-color: #f8f1e8;
     }
 
     .welcome h1 {
@@ -86,14 +78,14 @@
     }
 
     .welcome p {
-      max-width: 700px;
-      margin: 20px auto;
       font-size: 1.1rem;
       color: #4d3a28;
+      max-width: 700px;
+      margin: auto;
     }
 
     .buttons {
-      margin-top: 25px;
+      margin-top: 20px;
     }
 
     .buttons a {
@@ -101,17 +93,16 @@
       margin: 10px;
       background-color: #8b5e3c;
       color: white;
-      padding: 12px 25px;
+      padding: 10px 20px;
       border-radius: 8px;
-      font-size: 1rem;
-      transition: background 0.3s;
+      display: inline-block;
     }
 
     .buttons a:hover {
       background-color: #a46d4b;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       .slider {
         height: 250px;
       }
@@ -121,20 +112,17 @@
       }
 
       nav {
-        justify-content: center;
+        width: 100%;
+        text-align: center;
         margin-top: 10px;
       }
     }
   </style>
 </head>
-
 <body>
 
   <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Logo" />
-      Visvayatri
-    </div>
+    <div class="logo">Visvayatri</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="spiritual.html">Spiritual Trips</a>
@@ -145,16 +133,19 @@
   </header>
 
   <div class="slider">
-    <img src="images/spiritual1.jpg" class="slide active" alt="Temple in Himalayas">
-    <img src="images/spiritual2.jpg" class="slide" alt="Sacred River View">
-    <img src="images/spiritual3.jpg" class="slide" alt="Devi Darshan Trail">
+    <div class="slides">
+      <img src="images/spiritual1.jpg" alt="Temple in Himalayas">
+      <img src="images/spiritual2.jpg" alt="Sacred River View">
+      <img src="images/spiritual3.jpg" alt="Devi Darshan Trail">
+    </div>
   </div>
 
   <section class="welcome">
     <h1>Explore the Divine with Visvayatri</h1>
     <p>
-      Begin your journey through the holy lands of Northern India. From powerful Devi temples in Himachal to the
-      spiritually charged Panch Kedar route in Uttarakhand — our packages bring you closer to divinity.
+      Start your spiritual journey through the sacred temples and serene Himalayas of Northern India.
+      We offer guided packages for Devi Darshan, Panch Kedar, Char Dham and more.
+      Connect with the soul of India — from Pathankot to Haridwar.
     </p>
 
     <div class="buttons">
@@ -163,6 +154,5 @@
     </div>
   </section>
 
-  <script src="slider.js"></script>
 </body>
 </html>
