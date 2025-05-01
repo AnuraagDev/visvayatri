@@ -13,6 +13,126 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/jpeg" href="images/logo.png"> <!-- Favicon line --> 
 </head>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf2;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f3e8dd;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #804000;
+  }
+
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    color: #5b3924;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #e0cdb5;
+  }
+
+  .slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 1s;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f1e8;
+  }
+
+  .welcome h1 {
+    color: #6a3d2b;
+    font-size: 2.5rem;
+  }
+
+  .welcome p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: #4d3a28;
+  }
+
+  .buttons {
+    margin-top: 25px;
+  }
+
+  .buttons a {
+    text-decoration: none;
+    margin: 10px;
+    background-color: #8b5e3c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+
+  .buttons a:hover {
+    background-color: #a46d4b;
+  }
+
+  @media (max-width: 768px) {
+    .slider {
+      height: 250px;
+    }
+
+    .welcome h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+</style>
 <body>
 
 <header>

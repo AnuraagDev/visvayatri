@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaishno Devi Yatra - Visvayatri</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+  
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf2;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f3e8dd;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #804000;
+  }
+
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    color: #5b3924;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #e0cdb5;
+  }
+
+  .slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 1s;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f1e8;
+  }
+
+  .welcome h1 {
+    color: #6a3d2b;
+    font-size: 2.5rem;
+  }
+
+  .welcome p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: #4d3a28;
+  }
+
+  .buttons {
+    margin-top: 25px;
+  }
+
+  .buttons a {
+    text-decoration: none;
+    margin: 10px;
+    background-color: #8b5e3c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+
+  .buttons a:hover {
+    background-color: #a46d4b;
+  }
+
+  @media (max-width: 768px) {
+    .slider {
+      height: 250px;
+    }
+
+    .welcome h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+</style>
+<body>
+
+  <header>
+    <div class="logo">
+      Visvayatri
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="spiritual.html">Spiritual Trips</a>
+      <a href="fun.html">Fun Trips</a>
+      <a href="mailto:visvayatri@gmail.com">Email Us</a>
+      <a href="https://wa.me/7986676072">WhatsApp</a>
+    </nav>
+  </header>
+
+  <div class="slider">
+    <input type="radio" id="slide1" name="slider" checked>
+    <input type="radio" id="slide2" name="slider">
+    <input type="radio" id="slide3" name="slider">
+
+    <div class="slides">
+      <img src="images/vaishno1.jpg" class="slide" alt="Vaishno Devi 1">
+      <img src="images/vaishno2.jpg" class="slide" alt="Vaishno Devi 2">
+      <img src="images/vaishno3.jpg" class="slide" alt="Vaishno Devi 3">
+    </div>
+  </div>
+
+  <section class="welcome">
+    <h1>Vaishno Devi Yatra</h1>
+    <p>
+      Visit the sacred shrine of Maa Vaishno Devi nestled in the Trikuta Mountains. This spiritual pilgrimage attracts millions of devotees annually seeking blessings and peace.
+    </p>
+
+    <h3>Highlights:</h3>
+    <ul>
+      <li>Darshan of the holy cave and naturally formed pindis</li>
+      <li>Trekking experience with scenic views</li>
+      <li>Helicopter / pony / palki facilities available</li>
+    </ul>
+
+    <h3>Itinerary Overview:</h3>
+    <ul>
+      <li>Day 1: Arrival at Katra, hotel check-in</li>
+      <li>Day 2: Early morning yatra to Bhawan and darshan</li>
+      <li>Day 3: Return from Bhawan → Katra → Departure</li>
+    </ul>
+
+    <div class="contact-buttons">
+      <a href="https://wa.me/917986676072" class="btn">WhatsApp 7986676072</a>
+      <a href="https://wa.me/917986682092" class="btn">WhatsApp 7986682092</a>
+      <a href="mailto:visvayatri@gmail.com" class="btn">Request Quote via Email</a>
+    </div>
+  </section>
+
+</body>
+</html>

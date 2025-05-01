@@ -117,3 +117,11 @@
   margin: 15px 0;
   text-align: center;
 }
+.slide {
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
